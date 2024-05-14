@@ -18,3 +18,4 @@ for (let value of data) {
 for (let idx in data) {
   console.log(data[idx]);
 }
+
