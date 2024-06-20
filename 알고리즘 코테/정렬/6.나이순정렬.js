@@ -25,9 +25,12 @@ people.sort((a, b) => {
 
 });
 
+let answer_ = "";
 for (let person of people) {
-    console.log(person.age + ' ' + person.name);
+    answer_= person.age + ' ' + person.name+ "";
 }
+
+console.log();
 
 
 
@@ -39,13 +42,12 @@ let n = Number(lines[0]);
 let arr = [];
 
 for (let i = 1; i <= n; i++) {
-    // 각 사람의 (나이, 이름) 정보를 입력받기
     let age = Number(lines[i].split(' ')[0]);
     let name = lines[i].split(' ')[1];
     arr.push([age, name]);
 }
 
-arr.sort((a, b) => a[0] - b[0]); // Node.js의 정렬은 기본적으로 stable
+arr.sort((a, b) => a[0] - b[0]); 
 
 let answer = "";
 for (let x of arr) answer += x[0] + " " + x[1] + "\n";
